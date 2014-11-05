@@ -1,92 +1,292 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>OSGIS2014</title>
+    <title>EPUG2014</title>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <link href='big.css' rel='stylesheet' type='text/css' />
+    <link href='big.css' rel='stylesheet' type='text/css'/>
     <style>
-      .achievement {
-        background-image: url('img/achievement-locked.png');
+      .paddedText
+        {
+          padding-left: 100px;
+        }
+      .paddedText300px
+        {
+          padding-left: 300px;
+        }
+      .paddedText500px
+        {
+          padding-left: 500px;
+        }
+      .dive {
+        background-image: url('img/skydive.jpg');
         background-repeat: no-repeat;
-        background-position: center 100px;
-        background-size: 50%
-        /*background-color: #fff;
-        color: #111;*/
-      }
+        background-position: center 1px;
+        background-size: 100%;
+        }
       .hybrid {
         background-image: url('img/hybrid.jpg');
         background-repeat: no-repeat;
         background-position: 50px 50px;
-        background-size: 300px;
-        /*background-color: #fff;
-        color: #111;*/
-      }
-    </style>
+        background-size: 400px;
+        }
+      .licence {
+        background-image: url('img/licence.png');
+        background-repeat: no-repeat;
+        background-position:50px 50px;
+        background-size: 30%;
+        }
+      .esrioss {
+        background-image: url('img/esri-oss.png');
+        background-repeat: no-repeat;
+        background-position:50px 50px;
+        background-size: 800px;
+        }
+      .freebeer {
+        background-image: url("img/freebeer.jpg");
+        background-repeat: no-repeat;
+        background-position:0px 0px;
+        background-size: 100%;
+        }
+      .facepalm {
+        background-image: url("img/facepalm.jpg");
+        background-repeat: no-repeat;
+        background-position:0px 0px;
+        background-size: 100%;
+        }
+      .deadline {
+        background-image: url('img/deadline.gif');
+        background-repeat: no-repeat;
+        background-position: center 0px;
+        background-size: 100%;
+        }
+      .ingredients {
+        background-image: url('img/ingredients.jpg');
+        background-repeat: no-repeat;
+        background-position: center 0px;
+        background-size: 100%;
+        }
+      .wallofterror {
+        background-image: url('img/wallofterror.jpg');
+        background-repeat: no-repeat;
+        background-position: center 0px;
+        background-size: 100%;
+        }
+      .achievement {
+        background-image: url('img/achievement-locked.png');
+        background-repeat: no-repeat;
+        background-position: center 100px;
+        background-size: 50%;
+        }
+      .reidhoffman {
+        background-image: url('img/reidhoffman.jpg');
+        background-repeat: no-repeat;
+        background-position: center 0x;
+        background-size: 100%;
+        }
+      .fastforward {
+        background-image: url('img/fastforward.png');
+        background-repeat: no-repeat;
+        background-position: 25px 25px;
+        background-size: 40%;
+        }
+      .cutestory {
+        background-image: url('img/cutestory.jpg');
+        background-repeat: no-repeat;
+        background-position: center 0x;
+        background-size: 100%;
+        }
+      .irisdashboard {
+        background-image: url('img/iris-dashboard.gif');
+        background-repeat: no-repeat;
+        background-position: 25px 25px;
+        background-size: 1000px;
+        }
+      .irismeasure {
+        background-image: url('img/iris-measure.png');
+        background-repeat: no-repeat;
+        background-position: 25px 25px;
+        background-size: 1000px;
+        }
+      .irisfileexpolorer {
+        background-image: url('img/iris-file-explorer.gif');
+        background-repeat: no-repeat;
+        background-position: 25px 25px;
+        background-size: 1000px;
+        }
+      .irisvessel {
+        background-image: url('img/iris-vessel.gif');
+        background-repeat: no-repeat;
+        background-position: 25px 25px;
+        background-size: 1000px;
+        }
+      .irisbasemap{
+        background-image: url('img/iris-basemap.gif');
+        background-repeat: no-repeat;
+        background-position: 25px 25px;
+        background-size: 1000px;
+        }
+      .iriscad{
+        background-image: url('img/iris-cad.gif');
+        background-repeat: no-repeat;
+        background-position: 25px 25px;
+        background-size: 1000px;
+        }
+      .webmercator {
+        background-image: url('img/mercator.jpg');
+        background-repeat: no-repeat;
+        background-position: center 0x;
+        background-size: 100%;
+        color: #111;
+        }
+      .mapprod {
+        background-image: url('img/map-prod.gif');
+        background-repeat: no-repeat;
+        background-position: 50px 50px;
+        background-size: 40%;
+        background-color: #fff;
+        color: #111;
+        }
+      .igm {
+        background-image: url('img/igm.gif');
+        background-repeat: no-repeat;
+        background-position: 50px 50px;
+        background-size: 800px;
+        }
+      .inkscape {
+        background-image: url('img/inkscape.png');
+        background-repeat: no-repeat;
+        background-position: 50px 50px;
+        background-size: 800px;
+        }
+      .projexp {
+        background-image: url('img/projexp.gif');
+        background-repeat: no-repeat;
+        background-position: 50px 50px;
+        background-size: 900px;
+        }
+      .srvexp {
+        background-image: url('img/surveyexp.gif');
+        background-repeat: no-repeat;
+        background-position: 50px 50px;
+        background-size: 900px;
+        }
+      .gorilla {
+        background-image: url('img/gorilla.jpg');
+        background-repeat: no-repeat;
+        background-position: center 0x;
+        background-size: 100%;
+        color: #FF9933;
+        }
+      .postarcmap {
+        background-image: url('img/postarcmap.png');
+        background-repeat: no-repeat;
+        background-position: 50px 50px;
+        background-size: 70%;
+        }
+      .pgcon {
+        background-image: url('img/pgcon.png');
+        background-repeat: no-repeat;
+        background-position: 50px 50px;
+        background-size: 900px;
+        }
+      .geoscientist {
+        background-image: url('img/geoscientist.png');
+        background-repeat: no-repeat;
+        background-position: 50px 50px;
+        background-size: 900px;
+        background-color: #fff;
+        color: #111;
+        }
+      .dtm {
+        background-image: url('img/dtm.png');
+        background-repeat: no-repeat;
+        background-position: 50px 50px;
+        background-size: 80%;
+        }
+      .gdal {
+        background-image: url('img/gdal.png');
+        background-repeat: no-repeat;
+        background-position:50px 400px;
+        background-size: 615px;
+        background-color: #fff;
+        color: #111;
+        }
+      .confused {
+        background-image: url('img/confused.jpeg');
+        background-repeat: no-repeat;
+        background-position: 50px 50px;
+        background-size: 40%;
+        background-color: #fff;
+        color: #111;
+        }
+      </style>
     <script src='big.js'></script>
   </head>
 <body>
-  <div class='nicegreen'>Greetings</div>
-  <div><img src="img/skydive.jpg"/>"A dive into the hybrid geospatial stack"</div>
-  <div>about/me<br>Sam Franklin<br>GIS Manager @ <img style='vertical-align:middle' src='img/lrsenergy-1.png' /><br>@samfranklin<br>sam.franklin@lr-senergy.com</div>
+  <div><strong>Greetings</strong></div>
+  <div data-bodyclass="dive">"A dive into the hybrid geospatial stack"</div>
+  <div>about<br>Sam Franklin<br>GIS Manager @ <img style='vertical-align:middle' src='img/lrsenergy.png' /><br>@samfranklin<br>sam.franklin@lr-senergy.com</div>
   <div>Why am I here<br>?</div>
-  <div>"I WANT ANSWERS!"</div>
-  <div>act1-what we did <em class='nicegreen'>first</em><br>act2-what we're <em class='nicegreen'>doing</em> now<br>act3-what <em class='nicegreen'>worked</em>/ what <em class='nicegreen'>failed</em> / what's <em class='nicegreen'>next</em></div>
-  <div data-bodyclass="hybrid"><br><br>hybrid</div> <!--hybridissue here-->
-  <div>licencing<img class='img100pc' src='img/spidey-mod.jpg'/></div>
-  <div><em class='nicegreen'>hybrid</em> is common! check out +100 open source acknowledgements in <a href="http://resources.arcgis.com/en/help/main/10.2/00qn/pdf/ArcGIS10_Acknowledgements.pdf">ArcGIS</a></div>
-  <div>&nbsp;esri advocates hybrid approaches and <br><a href="http://blogs.esri.com/esri/esri-insider/2011/10/24/open-source-closed-source-moving-to-the-middle/">blogs</a> and <a href src="http://blogs.esri.com/esri/arcgis/2013/02/04/going-open-source-with-esri/">blogs</a><br><img src='img/esri-oss.png'/></div>
-  <div><img src="img/freebeer.jpg"/> Steve Feldman's<a href="http://knowwhereconsulting.co.uk/there-is-no-such-thing-as-a-free-lunch/" target="_blank">no such thing as a free lunch"</a></div>
-  <div><img class='img100pc' src="img/facepalm-mod.jpg"/>no SQL database...<br><br>and<br><br>no webmap...<br></div>
-  <div>the gauntlet was thrown down</div>
-  <div><img src='img/skydive.gif'/>4 week<br>deadline !!!</div>
-  <div>limited options due to <em class='nicegreen'>time-pressure</em> and needed <em class='nicegreen'>customisation</em></div>
+  <div><em>"why did you decide that"</em><br><br><strong>"what components did you use"</strong></div>
+  <div><em>act1</em>-what we did <strong>first</strong><br><em>act2</em>-what we're doing <strong>now</strong><br><em>act3</em>-what <strong>worked</strong>/ what <strong>failed</strong> / what's <strong>next</strong></div>
+  <div data-bodyclass="hybrid"><br><br>hybrid</div>
+  <div data-bodyclass="licence"><br>FOSS=licencing</div>
+  <div><strong>hybrid</strong> is <em>common</em>!<br><br>check out <strong>+100 open source </strong><a href="http://resources.arcgis.com/en/help/main/10.2/00qn/pdf/ArcGIS10_Acknowledgements.pdf" target="_blank">acknowledgements in ArcGIS</a></div>
+  <div data-bodyclass="esrioss"><br><br><br><em>esri advocates <a href="http://www.esri.com/products/technology-topics/open-source" target="_blank">hybrid</a> approaches and blogs about it </em><a href="http://blogs.esri.com/esri/esri-insider/2011/10/24/open-source-closed-source-moving-to-the-middle/" target="_blank">here</a> <em>and</em> <a href="http://blogs.esri.com/esri/arcgis/2013/02/04/going-open-source-with-esri/" target="_blank">here</a></div>
+  <div data-bodyclass="freebeer"><br><br><br><br>Check out Steven Feldman's<a href="http://knowwhereconsulting.co.uk/there-is-no-such-thing-as-a-free-lunch/" target="_blank"><br>"there's no such thing as a free lunch"</a></div>
+  <div data-bodyclass="facepalm">yeah...<br><em>no SQL</em> database...<br>and<br><em>no webmap</em>...</div>
+  <div>the <em>gauntlet</em> was thrown <strong>down</strong></div>
+  <div data-bodyclass="deadline">4 week<br>deadline !!!</div>
+  <div><em>limited</em> options due to <strong>time-pressure</strong> and needed <strong>customisation</strong></div>
   <div><img src='img/ingredients.jpg' /><em>open source gives you access to the ingredients</em></div>
-  <div><img src='img/wallofterror.jpg' />the wall of terror</div>
-  <div><em class='nicegreen'>mentoring</em> from <img src='img/astun.png'/> and <img src='img/deckchair.png'/></div>
+  <div><img src='img/wallofterror.jpg' />the wall of <strong>terror!</strong></div>
+  <div><strong>mentoring</strong> from <img src='img/astun.png'/> and <img src='img/deckchair.png'/></div>
   <div data-bodyclass="achievement"><br><br>hello world</div>
-  <div><img src='img/reidhoffman-1.jpg'/><em class='light'>"If you are not embarrassed by the first version of your product, you've launched too late."<br>-- Reid Hoffman</em></div>
-  <div class='nicegreen'>Minimal Viable Product</div>
-  <div>&nbsp;<img src='img/fastforward-sf.png' /></div>
-  <div>version 2.2.0 of <em class='nicegreen'>'iris'</em><br><img src='img/iris-login.png'/></div>
+  <div data-bodyclass="reidhoffman"><em class='light'>"If you are not embarrassed by the first version of your product, you've launched too late."<br>-- Reid Hoffman</em></div>
+  <div><strong>Minimal Viable Product</strong></div>
+  <div data-bodyclass="fastforward"><br><br><br><br><strong><br>2 years</strong></div>
+  <div>version 2.2.0 of <strong>Iris</strong><br><img src='img/iris-login.png'/></div>
   <div>servers<br><img src='img/rackspace-400Hpx.png'/> + <img src='img/archlinux-400Hpx.png'/></div>
   <div>server apps<br><img src='img/postgis-300Hpx.png'/> + <img src='img/geoserver-logo-300Hpx.png'/> Geoserver</div>
-  <div>client side frameworks are <em class='nicegreen'>OpenLayers2</em> for spatial and <em class='nicegreen'>JQuery/Bootstrap</em> for a responsive UI</div>
-  <div><img src='img/willywonka.jpg'>nice story GIS guy..<br><br><br><br>how does this help me again?</div>
-  <div>custom <em class='nicegreen'>dashboards</em> via HighchartsJS</div>
-  <div>&nbsp;<img class='img100pc' src='img/iris-dashboard-1.gif'/></div>
-  <div>custom measure/travel time control</div>
-  <div>&nbsp;<img class='img100pc' src='img/iris-measure-1.png'/></div>
-  <div>multi-source realtime <em class='nicegreen'>vessel tracking</em>  with history</div>
-  <div>&nbsp;<img class='img100pc' src='img/iris-vessel-2.gif'/></div>
-  <div>too many <em class='nicegreen'>hyperlinks</em> = File Explorer UI</div>
-  <div>&nbsp;<img class='img100pc' src='img/iris-fileexplorer-2.gif'/></div>
-  <div>Findmaps hydrographic-chart TMS, Esri Ocean Basemap, Google-Hybrid, BGS</div>
-  <div>custom rolled marine infrastructure and licencing TMS</div>
-  <div>&nbsp;<img class='img100pc' src='img/iris-basemap-4.gif'/></div>
-  <div>...using tilemill // mapnik xml // mapproxy = sweet.</div>
-  <div><em class='nicegreen'>Tiled CAD?</em></div>
-  <div>&nbsp;<img class='img100pc' src='img/iris-cad-1.gif'/></div>
-  <div>web mercator = distortion!</div>
-  <div><img src='img/gorilla.jpg'><em>=knowledge management</em></div>
-  <div>insert projects database</div>
-  <div>insert survey database</div>
-  <div>insert arcmap connection dialog</div>
-  <div>enterprise <em class='nicegreen'>postgreSQL</em><br>1-master<br>2-slaves<br>and replicate</div>
-  <div>shell-based database loading with <em class='nicegreen'>WFS</em>+<a href="http://www.gdal.org/ogr2ogr.html/">ogr2ogr</a> or <em class='nicegreen'>wget</em>+<em class='nicegreen'>7zip</em>+<em class='nicegreen'>pgsql2shp</em><br>= easy life</div>
-  <div>Fledermaus</a> + <a href="http://www.gdal.org/">gdal</a> survey grid processing</div>
-  <div>insert survey grid img</div>
-  <div>arcpy SSDM validation</div>
-  <div>arcmap map production</div>
-  <div>inkscape neaten up</div>
-  <div>ground model development</div>
+  <div>client side frameworks are <strong>OpenLayers2</strong> for <em>spatial</em> and <strong>JQuery/Bootstrap</strong> for a <em>responsive UI</em></div>
+  <div data-bodyclass="cutestory">cute story GIS guy..<br><br><br><br>how does this help me again?</div>
+  <div>custom <strong>dashboards</strong> via <em>HighchartsJS</em></div>
+  <div data-bodyclass="irisdashboard"></div>
+  <div><em>custom</em> transit control</div>
+  <div data-bodyclass="irismeasure"></div>
+  <div><em>multi</em>-source realtime <strong>vessel tracking</strong> with <em>history</em></div>
+  <div data-bodyclass="irisvessel"></div>
+  <div><strong>too</strong> many hyperlinks = <em>File Explorer UI</em></div>
+  <div data-bodyclass="irisfileexpolorer"></div>
+  <div><em>3rd-party</em> base-mapping from <strong>Findmaps</strong> // <strong>SeaZone</strong> // <strong>Esri</strong> // <strong>Google</strong> // <strong>BGS</strong> // <strong>OpenWeatherMap</strong></div>
+  <div>but...<br>we needed a <strong>custom-rolled TMS</strong> for <em>marine infrastructure</em> and <em>licencing</em></div>
+  <div data-bodyclass="irisbasemap"></div>
+  <div>...using <br><strong>tilemill</strong> // <br><strong>mapnik</strong> // <br><strong>mapproxy</strong><br> = sweet !</div>
+  <div>Wait.<br><strong>CAD?</strong><br>Tile it !</div>
+  <div data-bodyclass="iriscad"></div>
+  <div data-bodyclass="webmercator">Web Mercator = distortion!</div>
+  <div data-bodyclass="gorilla">knowledge management</div>
+  <div data-bodyclass="projexp"><br><br><br><br><em>applied to projects</em></div>
+  <div data-bodyclass="srvexp"><br><br><br><br><em>applied to surveys</em></div>
+  <div data-bodyclass="geoscientist"><br><br><br><br><em>..and I want to use ArcGIS Desktop.</em></div>
+  <div data-bodyclass="pgcon"><br><br><br><br><em>create a connection</em></div>
+  <div data-bodyclass="postarcmap"><br><br><br><br><em>load your data!</em></div>
+  <div>enterprise <strong>postgreSQL</strong><br>1-master<br>2-slaves<br>and replicate</div>
+  <div>shell-based database loading with <strong>WFS</strong>+<a href="http://www.gdal.org/ogr2ogr.html/">ogr2ogr</a> or <strong>wget</strong>+<strong>7zip</strong>+<strong>pgsql2shp</em><br>= easy life</div>
+  <div data-bodyclass="dtm">shell-based<br>survey dtm<br>processing<br>chain<br><br><br></div>
+  <div data-bodyclass="gdal">QPS Fledermaus<br>FMCommand [XYZ-->SD-->ASC]<br>..then GDAL programs<br><br><br><br><br><br></div>
+  <div>arcpy SSDM validation<br><br>automated schema checks = [<strong>names</em>, <strong>headers</em>, <strong>datatypes</em>, <strong>CRS</em>, <strong>geometry</em>, <strong>styling</em>]<br><br>manual checks = [<strong>content against CAD deliverables</em>]<br></div>
+  <div data-bodyclass="mapprod"><span class="paddedText500px">Esri=</span><br><span class="paddedText500px">Map</span><span class="paddedText500px">Production</span></div>
+  <div data-bodyclass="inkscape"><br><br><br>ArcMap -->SVG--> Inkscape<br></div>
+  <div data-bodyclass="igm"><br><br><br><strong>3D Analyst</em> driven ground model development</div>
   <div>&nbsp;<img src='img/pitfalls.png'><br>pitfalls</div>
-  <div>&nbsp;<img src='img/hammer.jpg'>&nbsp;&nbsp;"hey buddy<br>...gotta <em class='nicegreen'>nail?</em>"</div>
-  <div>&nbsp;<img src='img/confused.jpeg'>&nbsp;&nbsp;&nbsp;git!? push!? pull!?&nbsp;&nbsp;<br><br>&nbsp;&nbsp;...WTF?</div>
-  <div>&nbsp;<img src='img/early-adopter-mod.jpg'>&nbsp;find early adopters + get <a href="http://www.google.com/google-d-s/createforms.html">feedback</a></div>
+  <div>&nbsp;<img src='img/hammer.jpg'>&nbsp;&nbsp;"hey buddy<br>...gotta <strong>nail?</strong>"</div>
+  <div data-bodyclass="confused"><br><br><span>git!? push!? pull!?</span><br><span class="paddedText">...WTF?</span></div>
+  <div>&nbsp;<img src='img/early-adopter.jpg'>&nbsp;find early adopters + get <a href="http://www.google.com/google-d-s/createforms.html">feedback</a></div>
   <div class='nicegreen'>breathe...</div>
-  <div>and finally...<br>act1 = <em class='nicegreen'>agile</em><br>act2 = hybrid solutions in action<br>act 3 = avoid pitfalls by adopting process</div>
-  <div>"Do what you can, with what you have, where you are"<br><em class='nicegreen'>Theodore Roosevelt</em></div>
+  <div>and finally...<br>act1 = <strong>agile</strong><br>act2 = hybrid solutions <strong>in action</strong><br>act 3 = <strong>avoid pitfalls</strong> by adopting process</div>
+  <div>"Do what you can, with what you have, where you are"<br><strong>Theodore Roosevelt</em></div>
   <div>Presentation made with <a href="https://github.com/tmcw/big">Big</a> from <a href="https://twitter.com/tmcw">@tmcw</a></div>
 </body>
 </html>
